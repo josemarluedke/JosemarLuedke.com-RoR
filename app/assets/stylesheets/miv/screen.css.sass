@@ -1,0 +1,121 @@
+body
+  background: image-url('background.jpg') center
+  font-family: $dosis-regular
+  color: $brown
+
+h1
+  font-family: $dosis-semibold
+
+a
+  color: darken($brown, 10%)
+  font-family: $dosis-semibold
+  &:hover
+    color: lighten($brown, 20%)
+
+section
+  @extend .row-fluid
+  .text
+    font-size: 200%
+    line-height: 170%
+    @extend .span5
+    float: left
+
+    span.label
+      top: -20px
+      position: relative
+      background: rgba($brown, 0.2)
+      color: darken($brown, 10%)
+      font-family: $dosis-bold
+      font-size: 40%
+      margin:
+        left: 5px
+        right: 5px
+
+    span
+      &.pull-right
+        text-align: right
+
+      &.margin-top
+        margin-top: 40px
+
+      &.center
+        text-align: center
+    @media screen and (max-width: 560px)
+      font-size: 150%
+      float: none
+      width: 100%
+      span.label
+        top: -10px
+  .images
+    @extend .span6
+    float: right
+
+    @media screen and (max-width: 560px)
+      float: none
+      width: 100%
+      img
+        width: 100%
+
+  .image
+    float: left
+    padding: 10px
+    background: rgba($brown, 0.2)
+    +border-radius(6px)
+    position: relative
+
+    &:before
+      content: ""
+      text-align: center
+      padding-top: 3px
+      font-family: $dosis-bold
+      position: absolute
+      top: -19px
+      left: -20px
+      background: rgba($brown, 0.2)
+      width: 25px
+      height: 22px
+      +border-radius(50%)
+
+    &.one
+      margin-top: 80px
+      &:before
+        content: "1"
+    &.two
+      margin:
+        left: 50px
+        top: 50px
+      &:before
+        content: "2"
+    &.three
+      float: right
+      margin:
+        top: 50px
+        left: 50px
+        bottom: 50px
+      &:before
+        content: "3"
+    &.four
+      margin:
+        top: 80px
+        right: 50px
+      float: right
+      &:before
+        content: "4"
+    &.five
+      margin:
+        top: 80px
+        right: 20px
+      float: right
+      &:before
+        content: "5"
+
+
+section#second
+  +clearfix
+  .text
+    float: right
+
+section#contact
+  margin:
+    top: 100px
+  text-align: center
