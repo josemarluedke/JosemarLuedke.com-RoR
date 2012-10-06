@@ -1,53 +1,61 @@
 section#fisrt
-  .text
+  .text-column.text
     h1 Hello!
+
     p
-      span.pull-left I'm Josemar Davi Luedke,
-      span.pull-right
-        | I live in Porto Alegre/Brazil 
-        span.label 1
-      span.pull-left and I’m a Software Developer...
-      span.pull-right.margin-top
-        | What?
+      .pull-left I'm Josemar Davi Luedke,
+
+      .pull-right a Software Developer
+
+      .pull-left
+        | living in Porto Alegre/Brazil 
+        span.label.one
+
+      .pull-right.margin-top
+        | Developer what?
         br/
         | I write code, very crazy codes...
         br/
         | on a black screen
-        span.label 2
+        span.label.two
         | all day
 
-      span.pull-right.margin-top
+      .pull-right.margin-top
         | and I test
-        span.label 3
-        | my code with TDD and BDD
+        span.label.three
+        | my code with TDD and BDD.
 
-  .images
+  .images-column
     .image.one
       = link_to "http://goo.gl/maps/L3wDv", target: :_blank do
         = image_tag 'location.jpg'
     .image.two
       = image_tag 'code.jpg'
-  .image-tree-wrapper
+
+  .image-three
     .image.three
       = image_tag 'tests.jpg'
 
 section#second
-  .text.pull-right
+  .text-column.text.pull-right
     p
-      span.pull-left
+      .pull-left
         | I have some open source
         br/
         | projects...
-      span.pull-right.margin-top
+
+      .pull-right.margin-top
         | and I contribute to other
         br/
         | projects too.
-      span.pull-left.center.margin-top
+
+      .pull-left.center.margin-top
         | You can see my projects on
         br/
         = link_to "GitHub", "http://github.com/josemarluedke/", target: :_blank
-        span.label 4
-      span.pull-left.margin-top
+        span.label.four
+
+      .pull-left.margin-top
         | and
         br/
         | you can see
@@ -55,12 +63,14 @@ section#second
         | some of my public activity
         br/
         = link_to "here", "http://github.com/josemarluedke?tab=activity", target: :_blank
-        span.label 5
+        span.label.five
         | .
-  .images
+
+  .images-column
     .image.four
       = link_to "http://github.com/josemarluedke/", target: :_blank do
         = image_tag 'github.png'
+
     .image.five
       = link_to "http://github.com/josemarluedke?tab=activity", target: :_blank do
         = image_tag 'activity.jpg'

@@ -1,0 +1,52 @@
+.images-column
+  @extend .span6
+  float: right
+
+  @media screen and (max-width: 560px)
+    float: none
+    width: 100%
+    img
+      width: 100%
+
+.image
+  float: left
+  padding: 10px
+  background: rgba($brown, 0.2)
+  +border-radius(6px)
+  position: relative
+
+  &:before
+    text-align: center
+    padding-top: 3px
+    font-family: $dosis-bold
+    position: absolute
+    top: -19px
+    left: -20px
+    background: rgba($brown, 0.2)
+    width: 25px
+    height: 22px
+    +border-radius(50%)
+
+  &.one
+    margin-top: 80px
+  &.two
+    margin:
+      left: 50px
+      top: 50px
+  &.three
+    float: right
+    margin:
+      top: 50px
+      left: 50px
+      bottom: 50px
+  &.four
+    margin:
+      top: 80px
+      right: 50px
+    float: right
+  &.five
+    margin:
+      top: 80px
+      right: 20px
+    float: right
+
