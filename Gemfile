@@ -49,13 +49,6 @@ group :production do
 end
 
 group :development, :test do
-  gem "rspec-rails", ">= 2.11.0"
-  gem "shoulda-matchers"
-  gem "machinist", ">= 2.0"
-  gem "ffaker"
-  gem 'database_cleaner'
-  gem "capybara"
-  gem "jasmine"
   gem "pry"
   gem 'awesome_print'
 end
