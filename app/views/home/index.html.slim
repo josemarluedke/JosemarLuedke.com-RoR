@@ -1,2 +1,73 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+section#fisrt
+  .text
+    h1 Hello!
+    p
+      span.pull-left I'm Josemar Davi Luedke,
+      span.pull-right
+        | I live in Porto Alegre/Brazil 
+        span.label 1
+      span.pull-left and I’m a Software Developer...
+      span.pull-right.margin-top
+        | What?
+        br/
+        | I write code, very crazy codes...
+        br/
+        | on a black screen
+        span.label 2
+        | all day
+
+      span.pull-right.margin-top
+        | and I test
+        span.label 3
+        | my code with TDD and BDD
+
+  .images
+    .image.one
+      = link_to "http://goo.gl/maps/L3wDv", target: :_blank do
+        = image_tag 'location.jpg'
+    .image.two
+      = image_tag 'code.jpg'
+  .image-tree-wrapper
+    .image.three
+      = image_tag 'tests.jpg'
+
+section#second
+  .text.pull-right
+    p
+      span.pull-left
+        | I have some open source
+        br/
+        | projects...
+      span.pull-right.margin-top
+        | and I contribute to other
+        br/
+        | projects too.
+      span.pull-left.center.margin-top
+        | You can see my projects on
+        br/
+        = link_to "GitHub", "http://github.com/josemarluedke/", target: :_blank
+        span.label 4
+      span.pull-left.margin-top
+        | and
+        br/
+        | you can see
+        br/
+        | some of my public activity
+        br/
+        = link_to "here", "http://github.com/josemarluedke?tab=activity", target: :_blank
+        span.label 5
+        | .
+  .images
+    .image.four
+      = link_to "http://github.com/josemarluedke/", target: :_blank do
+        = image_tag 'github.png'
+    .image.five
+      = link_to "http://github.com/josemarluedke?tab=activity", target: :_blank do
+        = image_tag 'activity.jpg'
+
+section#contact
+  h1 You wanna talk to me?
+  h3 
+    | Send me an 
+    = mail_to 'josemarluedke@gmail.com', 'email'
+    | .
