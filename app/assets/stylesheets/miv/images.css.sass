@@ -2,11 +2,11 @@
   @extend .span6
   float: right
 
-  @media screen and (max-width: 560px)
-    float: none
-    width: 100%
-    img
-      width: 100%
+  @media screen and (max-width: 660px)
+    float: none !important
+    width: 100% !important
+    h1
+      font-size: 150%
 
 .image
   float: left
@@ -27,26 +27,26 @@
     height: 22px
     +border-radius(50%)
 
-  &.one
+  &.one, &.two, &.theree, &.four, &.five, &.six
     margin-top: 80px
+    float: right
+  &.one
+    margin-top: 40px
+    float: left
   &.two
     margin:
       left: 50px
-      top: 50px
+    float: left
   &.three
-    float: right
     margin:
       top: 50px
       left: 50px
       bottom: 50px
   &.four
     margin:
-      top: 80px
-      right: 50px
-    float: right
+      top: 40px
+      right: 30px
   &.five
-    margin:
-      top: 80px
-      right: 20px
-    float: right
-
+    margin-right: 50px
+  &.six
+    margin-right: 20px

@@ -32,7 +32,7 @@ section#fisrt
     .image.two
       = image_tag 'code.jpg'
 
-  .image-three
+  .image-three-wrapper.pull-left
     .image.three
       = image_tag 'tests.jpg'
 
@@ -40,6 +40,12 @@ section#second
   .text-column.text.pull-right
     p
       .pull-left
+        | Sometimes I write useless thing in my blog,
+        span.label.four
+        |  but sometimes this things are useful to someone.
+
+
+      .pull-left.margin-top
         | I have some open source
         br/
         | projects...
@@ -53,7 +59,7 @@ section#second
         | You can see my projects on
         br/
         = link_to "GitHub", "http://github.com/josemarluedke/", target: :_blank
-        span.label.four
+        span.label.five
 
       .pull-left.margin-top
         | and
@@ -63,15 +69,19 @@ section#second
         | some of my public activity
         br/
         = link_to "here", "http://github.com/josemarluedke?tab=activity", target: :_blank
-        span.label.five
         | .
+        span.label.six
 
   .images-column
     .image.four
+      h1 
+        = link_to "blog.josemarluedke.com", "http://blog.josemarluedke.com", target: :_blank
+
+    .image.five
       = link_to "http://github.com/josemarluedke/", target: :_blank do
         = image_tag 'github.png'
 
-    .image.five
+    .image.six
       = link_to "http://github.com/josemarluedke?tab=activity", target: :_blank do
         = image_tag 'activity.jpg'
 

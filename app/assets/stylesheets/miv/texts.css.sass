@@ -2,35 +2,44 @@
   font-size: 200%
   line-height: 170%
   @extend .span5
-  @extend .pull-left
+  float: left
+  +clearfix
 
-.text
-  span.label
-    top: -20px
-    position: relative
-    background: rgba($brown, 0.2)
-    color: darken($brown, 10%)
-    font:
-      family: $dosis-bold
-      size: 40%
-    margin:
-      left: 5px
-      right: 5px
-
-  div
-    &.pull-right
-      text-align: right
-
-    &.margin-top
-      margin-top: 40px
-
-    &.center
-      text-align: center
-
-  @media screen and (max-width: 560px)
-    font-size: 150%
-    float: none
-    width: 100%
+  @media screen and (max-width: 660px)
+    font-size: 250% !important
+    float: none !important
+    width: 100% !important
+    .pull-left, .pull-right
+      float: none !important
     span.label
       top: -10px
+
+  @media screen and (max-width: 460px)
+    font-size: 150% !important
+
+  &.text
+    span.label
+      top: -20px
+      position: relative
+      background: rgba($brown, 0.2)
+      color: darken($brown, 10%)
+      font:
+        family: $dosis-bold
+        size: 40%
+      margin:
+        left: 5px
+        right: 5px
+
+    div
+      &.pull-right
+        text-align: right
+
+      &.margin-top
+        margin-top: 40px
+
+      &.double-margin-top
+        margin-top: 80px
+
+      &.center
+        text-align: center
 
