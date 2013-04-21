@@ -1,6 +1,6 @@
 # JosemarLuedke.com
 
-Personal page made with Slim, Saas, Compass & Bootstrap on top of Ruby on Rails 
+Personal page made with Slim, Saas & Bootstrap on top of Ruby on Rails 
 
 
 ## Contributing
