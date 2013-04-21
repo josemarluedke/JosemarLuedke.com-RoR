@@ -15,7 +15,6 @@ html
     = csrf_meta_tag
     = javascript_include_tag "application"
   body
-    = initjs_tag
     = render 'layouts/flash', flash: flash if flash.present?
     .container
       = render 'layouts/header'
